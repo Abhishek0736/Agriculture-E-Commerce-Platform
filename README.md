@@ -11,6 +11,7 @@ A modern React-based platform connecting farmers and merchants for agricultural 
 
 ## Tech Stack
 - **Frontend**: React 19, Bootstrap 5
+- **Backend**: Java Spring Boot
 - **Routing**: React Router DOM
 - **Animation**: Framer Motion
 - **Icons**: React Icons, Bootstrap Icons
