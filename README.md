@@ -1,72 +1,118 @@
-# AgriTrade - Agricultural Trading Platform
+# 🌾 AgriTrade — Smart Agricultural Trading Platform
 
-A modern React-based platform connecting farmers and merchants for agricultural trade.
+AgriTrade is a full-stack e-commerce platform connecting **Farmers**, **Merchants**, and **Admins** to simplify agricultural product trading with secure access, product management, and transaction monitoring.
 
-## Features
-- 🌾 Farmer & Merchant Registration
-- 📦 Product Management System
-- 📊 Dashboard & Profile Management
-- 📱 Responsive Design
-- 🔐 Secure Authentication
+---
 
-## Tech Stack
-- **Frontend**: React 19, Bootstrap 5
-- **Routing**: React Router DOM
-- **Animation**: Framer Motion
-- **Icons**: React Icons, Bootstrap Icons
+## ✨ Features
 
-## Installation
+- 👨‍🌾 Multi-Role Authentication (Farmer, Merchant, Admin)
+- 🔐 Secure Login with JWT
+- 📦 Product Listing & Inventory Management
+- 💰 Order / Transaction Management
+- 📊 User Dashboard & Profile Management
+- 📱 Fully Responsive Modern UI
+- ⚡ Fast & Scalable REST APIs
+- 🛡️ Data Validation & Access Control
 
-1. Clone the repository
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| Frontend | React 19, Bootstrap 5, Framer Motion, React Router DOM |
+| Backend | Spring Boot, Spring Security (JWT), Hibernate, JPA |
+| Database | MySQL |
+| Tools | GitHub, Postman, Maven |
+
+---
+
+## 📂 Project Structure
+
+AgriTrade/
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── api/
+│ │ ├── contexts/
+│ │ ├── config/
+│ │ └── assets/
+│ └── package.json
+└── backend/
+├── src/main/java/
+│ └── com/agritrade/
+│ ├── controller/
+│ ├── service/
+│ ├── repository/
+│ └── model/
+└── pom.xml
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/AgriTrade.git
 cd AgriTrade
-```
-
-2. Install dependencies
-```bash
+🔧 Frontend Setup
+bash
+Copy code
+cd frontend
 npm install
-```
-
-3. Setup environment variables
-```bash
-cp .env.example .env
-# Update .env with your configuration
-```
-
-4. Start development server
-```bash
 npm start
-```
+🧩 Backend Setup
+bash
+Copy code
+cd backend
+mvn spring-boot:run
+🔑 Environment Variables
+Create .env file in frontend & backend:
 
-## Available Scripts
+ini
+Copy code
+# FRONTEND
+REACT_APP_API_BASE_URL=http://localhost:8080
 
-- `npm start` - Development server
-- `npm test` - Run tests
-- `npm run build` - Production build
+# BACKEND
+DB_URL=jdbc:mysql://localhost:3306/agritrade
+DB_USERNAME=your_db_username
+DB_PASSWORD=your_db_password
+JWT_SECRET=your_secret_key
+🧪 Available Commands
+Command	Description
+npm start	Run frontend dev server
+npm run build	Build frontend
+mvn spring-boot:run	Start backend server
+npm test	Run tests
 
-## Project Structure
-```
-src/
-├── components/     # Reusable components
-├── pages/         # Page components
-├── api/           # API services
-├── config/        # Configuration files
-├── helpers/       # Utility functions
-└── assets/        # Static assets
-```
+🔐 Security Best Practices
+Never commit .env & credentials ❌
 
-## Security Note
-- Never commit sensitive data like passwords or API keys
-- Use environment variables for configuration
-- Demo data is provided for testing purposes only
+Always validate user inputs
 
-## Contributing
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
+HTTPS for deployed production
 
-## License
-This project is for educational purposes.
+🤝 Contribution
+Fork the repo
+
+Create a feature branch: git checkout -b feature-name
+
+Commit: git commit -m "Add feature"
+
+Push: git push origin feature-name
+
+Open Pull Request 🚀
+
+📌 Contact
+Sneha Sonkar
+Full-Stack Developer
+
+GitHub: https://github.com/KmSneha9696
+
+LinkedIn: https://www.linkedin.com/in/kmsnehasonkar9696
