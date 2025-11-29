@@ -1,118 +1,118 @@
-# 🌾 AgriTrade — Smart Agricultural Trading Platform
+# 🌾 AgriTrade – Agricultural E-Commerce Platform
 
-AgriTrade is a full-stack e-commerce platform connecting **Farmers**, **Merchants**, and **Admins** to simplify agricultural product trading with secure access, product management, and transaction monitoring.
+A full-stack solution empowering **farmers, merchants, and admins** to trade agricultural products seamlessly.  
+Built with **Java Spring Boot + React + MySQL** ensuring secure and scalable operations.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 👨‍🌾 Multi-Role Authentication (Farmer, Merchant, Admin)
-- 🔐 Secure Login with JWT
+- 👨‍🌾 **Role-based System** – Farmer, Merchant & Admin access
+- 🔐 Secure Authentication (JWT)
 - 📦 Product Listing & Inventory Management
-- 💰 Order / Transaction Management
-- 📊 User Dashboard & Profile Management
-- 📱 Fully Responsive Modern UI
-- ⚡ Fast & Scalable REST APIs
-- 🛡️ Data Validation & Access Control
+- 💰 Order & Transaction Management
+- 📊 Dashboard with Analytics
+- 📝 Profile & Product Review System
+- 🌍 Fully Responsive & User-friendly UI
+- ⚡ Fast API communication with optimized DB queries
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|------|------------|
-| Frontend | React 19, Bootstrap 5, Framer Motion, React Router DOM |
-| Backend | Spring Boot, Spring Security (JWT), Hibernate, JPA |
-| Database | MySQL |
-| Tools | GitHub, Postman, Maven |
+| Layer | Technologies |
+|------|--------------|
+| **Frontend** | React 19, Bootstrap 5, React Router DOM, Framer Motion, React Icons |
+| **Backend** | Java 21, Spring Boot, Spring Security, REST APIs |
+| **Database** | MySQL |
+| **Tools** | Git, Postman, VS Code, IntelliJ IDEA |
+| **Deployment** | Vercel / Render (Coming Soon) |
 
 ---
 
 ## 📂 Project Structure
 
 AgriTrade/
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── api/
-│ │ ├── contexts/
-│ │ ├── config/
-│ │ └── assets/
-│ └── package.json
-└── backend/
-├── src/main/java/
-│ └── com/agritrade/
-│ ├── controller/
-│ ├── service/
-│ ├── repository/
-│ └── model/
-└── pom.xml
+└── src/
+├── main/java/ # Backend - Spring Boot
+│ ├── controllers/
+│ ├── services/
+│ ├── repositories/
+│ └── models/
+└── frontend/src/ # Frontend - React
+├── components/
+├── pages/
+├── api/
+├── helpers/
+└── assets/
 
 yaml
 Copy code
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation
 
-### Clone Repository
+### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/AgriTrade.git
+git clone https://github.com/Abhishek0736/AgriTrade.git
 cd AgriTrade
-🔧 Frontend Setup
+2️⃣ Setup Backend (Spring Boot)
+bash
+Copy code
+cd backend
+mvn install
+Configure DB in application.properties before running:
+
+env
+Copy code
+spring.datasource.url=jdbc:mysql://localhost:3306/agritrade
+spring.datasource.username=YOUR_DB_USER
+spring.datasource.password=YOUR_DB_PASSWORD
+Now run the Spring Boot server:
+
+bash
+Copy code
+mvn spring-boot:run
+3️⃣ Setup Frontend (React)
 bash
 Copy code
 cd frontend
 npm install
 npm start
-🧩 Backend Setup
-bash
-Copy code
-cd backend
-mvn spring-boot:run
-🔑 Environment Variables
-Create .env file in frontend & backend:
+🔐 Security Notes
+JWT-based secure authentication
 
-ini
-Copy code
-# FRONTEND
-REACT_APP_API_BASE_URL=http://localhost:8080
+Environment variables stored safely
 
-# BACKEND
-DB_URL=jdbc:mysql://localhost:3306/agritrade
-DB_USERNAME=your_db_username
-DB_PASSWORD=your_db_password
-JWT_SECRET=your_secret_key
-🧪 Available Commands
-Command	Description
-npm start	Run frontend dev server
-npm run build	Build frontend
-mvn spring-boot:run	Start backend server
-npm test	Run tests
+No sensitive info committed to repository
 
-🔐 Security Best Practices
-Never commit .env & credentials ❌
+📌 Future Enhancements
+AI-based Crop Price Forecasting
 
-Always validate user inputs
+Chat & Query Support between Farmers & Merchants
 
-HTTPS for deployed production
+Payment Gateway Integration
 
-🤝 Contribution
-Fork the repo
+Mobile App Version
 
-Create a feature branch: git checkout -b feature-name
+🧑‍💻 Author
+Abhishek Kumar
+Full-Stack Developer (Java + React)
 
-Commit: git commit -m "Add feature"
+📌 GitHub: https://github.com/Abhishek0736
+🔗 LinkedIn: https://www.linkedin.com/in/abhishek-ku0736
 
-Push: git push origin feature-name
+🤝 Contributing
+Fork the repository
 
-Open Pull Request 🚀
+Create a new feature branch
 
-📌 Contact
-Sneha Sonkar
-Full-Stack Developer
+Commit your changes
 
-GitHub: https://github.com/KmSneha9696
+Push to branch
 
-LinkedIn: https://www.linkedin.com/in/kmsnehasonkar9696
+Open a Pull Request 🚀
+
+📝 License
+This project is created for learning & educational purposes.
