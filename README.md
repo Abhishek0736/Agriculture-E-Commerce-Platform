@@ -1,50 +1,50 @@
 # 🌾 AgriTrade – Agricultural E-Commerce Platform
 
-A full-stack web platform that enables **farmers, merchants, and administrators** to trade agricultural products in a secure and efficient way.
-
-Built using **Java Spring Boot, React, and MySQL**.
+A full-stack solution empowering **farmers, merchants, and admins** to trade agricultural products seamlessly.  
+Built with **Java Spring Boot + React + MySQL** ensuring secure and scalable operations.
 
 ---
 
 ## 🚀 Features
 
-- 👨‍🌾 Multi-role system (Farmer, Merchant, Admin)
-- 🔐 JWT based secure authentication
-- 📦 Product listing & inventory management
-- 🛒 Order & transaction management
-- ⭐ Product reviews & user profiles
-- 📊 Admin dashboard with analytics
-- 📱 Fully responsive UI
-- ⚡ Fast REST APIs with optimized database queries
+- 👨‍🌾 **Role-based System** – Farmer, Merchant & Admin access
+- 🔐 Secure Authentication (JWT)
+- 📦 Product Listing & Inventory Management
+- 💰 Order & Transaction Management
+- 📊 Dashboard with Analytics
+- 📝 Profile & Product Review System
+- 🌍 Fully Responsive & User-friendly UI
+- ⚡ Fast API communication with optimized DB queries
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technologies |
 |------|--------------|
-| Frontend | React 19, Bootstrap 5, React Router, Framer Motion, React Icons |
-| Backend | Java 21, Spring Boot, Spring Security, REST API |
-| Database | MySQL |
-| Tools | Git, Postman, VS Code, IntelliJ IDEA |
-| Deployment | Vercel / Render (Planned) |
+| **Frontend** | React 19, Bootstrap 5, React Router DOM, Framer Motion, React Icons |
+| **Backend** | Java 21, Spring Boot, Spring Security, REST APIs |
+| **Database** | MySQL |
+| **Tools** | Git, Postman, VS Code, IntelliJ IDEA |
+| **Deployment** | Vercel / Render (Coming Soon) |
 
 ---
 
 ## 📂 Project Structure
 
 AgriTrade/
-├── backend/
-│ ├── controllers
-│ ├── services
-│ ├── repositories
-│ └── models
-└── frontend/
-├── components
-├── pages
-├── api
-├── helpers
-└── assets
+└── src/
+├── main/java/ # Backend - Spring Boot
+│ ├── controllers/
+│ ├── services/
+│ ├── repositories/
+│ └── models/
+└── frontend/src/ # Frontend - React
+├── components/
+├── pages/
+├── api/
+├── helpers/
+└── assets/
 
 yaml
 Copy code
@@ -53,50 +53,66 @@ Copy code
 
 ## ⚙️ Installation
 
-### 1. Clone Repository
+### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/KmSneha9696/AgriTrade.git
+git clone https://github.com/Abhishek0736/AgriTrade.git
 cd AgriTrade
-2. Backend Setup
+2️⃣ Setup Backend (Spring Boot)
 bash
 Copy code
 cd backend
 mvn install
-mvn spring-boot:run
-Configure database in application.properties
+Configure DB in application.properties before running:
 
-ini
+env
 Copy code
 spring.datasource.url=jdbc:mysql://localhost:3306/agritrade
 spring.datasource.username=YOUR_DB_USER
 spring.datasource.password=YOUR_DB_PASSWORD
-3. Frontend Setup
+Now run the Spring Boot server:
+
+bash
+Copy code
+mvn spring-boot:run
+3️⃣ Setup Frontend (React)
 bash
 Copy code
 cd frontend
 npm install
 npm start
-🔐 Security
-JWT Authentication
+🔐 Security Notes
+JWT-based secure authentication
 
-Role-based access control
+Environment variables stored safely
 
-Secure environment variable usage
+No sensitive info committed to repository
 
 📌 Future Enhancements
-AI based crop price prediction
+AI-based Crop Price Forecasting
 
-In-app chat between farmers & merchants
+Chat & Query Support between Farmers & Merchants
 
-Payment gateway integration
+Payment Gateway Integration
 
-Mobile application
+Mobile App Version
 
 🧑‍💻 Author
-Sneha Sonkar
-GitHub: https://github.com/KmSneha9696
+Abhishek Kumar
+Full-Stack Developer (Java + React)
 
-(Project developed for learning & academic purposes)
+📌 GitHub: https://github.com/Abhishek0736
+🔗 LinkedIn: https://www.linkedin.com/in/abhishek-ku0736
 
-📜 License
-This project is open-source and intended for educational use.
+🤝 Contributing
+Fork the repository
+
+Create a new feature branch
+
+Commit your changes
+
+Push to branch
+
+Open a Pull Request 🚀
+
+📝 License
+This project is created for learning & educational purposes.  
